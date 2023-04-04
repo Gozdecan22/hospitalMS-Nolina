@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="HospitalMS.Views.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet"  href="../../Libs/Bootstrap/css/bootstrap.min.css"  />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+                <nav class="navbar navbar-expand-lg navbar-primary bg-warning text-success">
+    <div class="container-fluid">
+  <a class="navbar-brand" href="#">Nolina Hastanesi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="Doctors.aspx">Doktorlar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Laboratuvar.aspx">Laboratuvar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Danisma.aspx">Danışma</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="../Guest/Home.aspx">Çıkış</a>
+      </li>
+      </ul>
+   
+  </div>
+  </div>
+
+</nav>
+     <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MyBody" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+</body>
+</html>
